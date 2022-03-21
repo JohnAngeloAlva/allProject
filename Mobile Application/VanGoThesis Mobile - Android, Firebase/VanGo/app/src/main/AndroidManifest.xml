@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ph.edu.mseuf.vango">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VanGo">
+        <activity
+            android:name=".driver.DriverForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".TermsAndCondition"
+            android:exported="false" />
+        <activity
+            android:name=".SignChooseUser"
+            android:exported="false" />
+        <activity
+            android:name=".LogSignChooseUser"
+            android:exported="false" />
+        <activity
+            android:name=".CommuterDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".CommuterForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverTayabas"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverMauban"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverSanAndres"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverAtimonan"
+            android:exported="false" />
+        <activity
+            android:name=".SanAndresReservation"
+            android:exported="false" />
+        <activity
+            android:name=".AtimonanReservation"
+            android:exported="false" />
+        <activity
+            android:name=".MaubanReservation"
+            android:exported="false" />
+        <activity android:name=".CommuterProfiles" />
+
+        <service
+            android:name=".FirebaseService"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="ph.edu.vangodriver.FirebaseService"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".CommuterViewVanList"
+            android:exported="false"
+            android:parentActivityName=".CommuterHome" /> <!-- COMMUTER PACKAGE -->
+        <activity
+            android:name=".notification"
+            android:exported="true" />
+        <activity
+            android:name=".CommuterLogins"
+            android:exported="true" />
+        <activity
+            android:name=".WelcomeScreens"
+            android:exported="true" />
+        <activity android:name=".CommuterHome" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCxaLGh4N-ig13143Cn3vUl_A-gHlFncck" />
+
+        <activity
+            android:name=".Search"
+            android:exported="true" />
+        <activity
+            android:name=".AdditionalInfo"
+            android:exported="true" />
+        <activity
+            android:name=".TayabasReservations"
+            android:exported="true"
+            android:parentActivityName=".CommuterViewVanList" />
+        <activity android:name=".full" /> <!-- DRIVER PACKAGE -->
+        <activity
+            android:name="ph.edu.vangodriver.ShowDriverInfo"
+            android:exported="true" />
+        <activity
+            android:name="ph.edu.vangodriver.ViewDriverList"
+            android:exported="true"
+            android:parentActivityName="ph.edu.vangodriver.OperatorHomepage" />
+        <activity android:name="ph.edu.vangodriver.DriverEditRoute" />
+        <activity
+            android:name="ph.edu.vangodriver.DriverAdditionalInfo"
+            android:exported="true" />
+        <activity
+            android:name="ph.edu.vangodriver.ShowRouteInfo"
+            android:parentActivityName=".driver.DriverViewVanList" />
+        <activity
+            android:name=".driver.DriverViewVanList"
+            android:parentActivityName="ph.edu.vangodriver.MainActivity" />
+        <activity android:name="ph.edu.vangodriver.MainActivity" />
+        <activity android:name="ph.edu.vangodriver.DriverLoginEmail" />
+        <activity
+            android:name="ph.edu.vangodriver.DriverProfile"
+            android:parentActivityName="ph.edu.vangodriver.MainActivity" />
+        <activity
+            android:name="ph.edu.vangodriver.DriverLogin"
+            android:parentActivityName="ph.edu.vangodriver.DriverHomepage" />
+        <activity
+            android:name="ph.edu.vangodriver.DriverSignup"
+            android:parentActivityName="ph.edu.vangodriver.DriverHomepage" />
+        <activity
+            android:name="ph.edu.vangodriver.DriverSignupNumber"
+            android:parentActivityName="ph.edu.vangodriver.DriverHomepage" />
+        <activity
+            android:name="ph.edu.vangodriver.DriverHomepage"
+            android:exported="true" />
+        <activity
+            android:name="ph.edu.vangodriver.OperatorShowRoute"
+            android:parentActivityName="ph.edu.vangodriver.OperatorVanList" />
+        <activity
+            android:name="ph.edu.vangodriver.OperatorVanList"
+            android:parentActivityName="ph.edu.vangodriver.OperatorHomepage" />
+        <activity
+            android:name="ph.edu.vangodriver.OperatorHomepage"
+            android:parentActivityName=".WelcomeScreens" />
+        <activity
+            android:name="ph.edu.vangodriver.OperatorLogin"
+            android:parentActivityName="ph.edu.vangodriver.DriverHomepage" />
+    </application>
+
+</manifest>

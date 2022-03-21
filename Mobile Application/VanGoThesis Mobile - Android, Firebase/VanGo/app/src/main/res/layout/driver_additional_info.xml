@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".full"
+    android:padding="20dp"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/login_back_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/full_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:elevation="20dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/circle_driver"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/login_back_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratbold"
+                android:text="2/2"
+                android:textAllCaps="true"
+                android:textColor="@color/yellow_500"
+                android:textSize="50sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/login_back_button"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:fontFamily="@font/montserratbold"
+            android:textAllCaps="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter your Username"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Full Name"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Age"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Address"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Phone Number"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputPhoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Van Model"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputVanModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Plate Number"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputPlateNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Van Capacity"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputVanCapacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Van Capacity"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black">
+
+                <Spinner
+                    android:id="@+id/spinnerDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Enter Van Capacity"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black">
+
+                <Spinner
+                    android:id="@+id/spinnerTerminal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Upload OR of Van"
+                        android:textSize="20dp"
+                        android:minHeight="30dp"/>
+
+                    <Button
+                        android:id="@+id/uploadOR"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Upload"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/black"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageOR"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/urlOr"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Upload CR of Van"
+                        android:textSize="20dp"
+                        android:minHeight="30dp"/>
+
+                    <Button
+                        android:id="@+id/uploadCR"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Upload"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/black"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageCR"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/urlCr"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Upload License"
+                        android:textSize="20dp"
+                        android:minHeight="30dp"/>
+
+                    <Button
+                        android:id="@+id/uploadLicense"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Upload"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/black"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageLicense"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/urlLicense"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Upload Profile Pic"
+                        android:textSize="20dp"
+                        android:minHeight="30dp"/>
+
+                    <Button
+                        android:id="@+id/uploadProfile"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Upload"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/black"
+                        />
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/ic_launcher_background"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/urImagelLicense"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:fontFamily="@font/montserratbold"
+                android:text="Signup"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Have an Account"
+                android:background="#00000000"
+                android:fontFamily="@font/montserratregular"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

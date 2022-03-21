@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Commuter | Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/ds.css">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="css/tempusdominus-bootstrap-4.min.css">
+
+    <!-- iCheck -->
+    <link rel="stylesheet" href="css/icheck-bootstrap.min.css">
+
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="css/jqvmap.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/adminlte.min.css">
+
+    <!-- AJAX -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+
+  </head>
+
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+      <!-- Preloader -->
+      <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="image/V.png" alt="AdminLTELogo" height="60" width="60">
+      </div>
+
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="index3.html" class="nav-link">Home</a>
+          </li>
+        
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item d-none d-sm-inline-block">
+            <button type="submit" id="logout" class="btn btn-primary btn-block">Logout</button>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+          <img src="image/V.png" alt="VanGo Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+          <span class="brand-text font-weight-light">VanGo</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="info">
+              <a href="#" class="d-block">Admin</a>
+            </div>
+          </div>
+
+      
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+              <li class="nav-item menu-open">
+
+                <a href="commuter.html" class="nav-link active">
+                  <i class="nav-icon fas fa-user"></i>
+                    <p>Commuter</p>
+                </a>
+
+                <a href="driver.html" class="nav-link">
+                  <i class="nav-icon fas fa-user-slash"></i>
+                    <p>Driver</p>
+                </a>
+
+                <a href="van.html" class="nav-link">
+                  <i class="nav-icon fas fa-shuttle-van"></i>
+                    <p>Van</p>
+                </a>
+
+              </li>
+
+            </ul>
+          </nav>
+          <!-- End of sidebar-menu -->
+        </div>
+        <!-- End of sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                
+                <h1 class="m-0">Dashboard</h1>
+              </div><!-- End of col -->
+              
+            </div><!-- End of row -->
+          </div><!-- End of container-fluid -->
+        </div>
+        <!-- End of content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Table for Commuter</h3>
+                  </div>
+
+                  <div class="card-body">
+                    <ul id="user-list"></ul>
+                    <div id="user-detail"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- edit user module -->
+        <!-- DELETE MODAL -->
+        <div class="container mt-5" id="delete-user-module">
+          <div class="card">
+              <h5 class="card-header text-center">Delete Commuter</h5>
+              <div class="card-body">
+                <form>
+                  <input type="hidden" class="delete-userid">
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block" id="delete-user-btn">Save</button>
+                </div>
+                    
+                </form>
+              </div>
+          </div>
+        </div>
+
+        <div class="container mt-5" id="edit-user-module">
+          <div class="card">
+              <h5 class="card-header text-center">Edit Commuter</h5>
+              <div class="card-body">
+                  <form>
+                    <a href="commuter.html">Close</a>
+                      <div class="form-group">
+                        <input type="hidden" class="edit-userid">
+                          <label>Name</label>
+                          <input type="text" data-key='fullName' class="form-control" class="edit-user-input" data-error="You must have a name." id="inputName" placeholder="Name" required>
+                          <!-- Error -->
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group">
+                          <label>Phone Number</label>
+                          <input type="text" data-key='phoneNum' class="form-control" placeholder="Username" required>
+                          <!-- Error -->
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group">
+                          <label>Email</label>
+                          <input type="email" data-key='email' class="form-control" " placeholder="Email" required>
+                          <!-- Error -->
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group">
+                        <label>Seat ID</label>
+                        <input type="text" data-key='seatID' class="form-control"  placeholder="Email" required>
+                        <!-- Error -->
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                      <div class="form-group">
+                          <button type="submit" class="btn btn-primary btn-block" id="edit-user-btn">Save</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End of wrapper -->
+
+
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script type="text/javascript" src="js/commuter.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="js/dashboard.js"></script>
+
+  </body>
+</html>

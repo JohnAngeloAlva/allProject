@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Concert Registration</string>
+
+    <string-array name="seat">
+        <item>Front Seat</item>
+        <item>Middle Seat</item>
+        <item>End Seat</item>
+    </string-array>
+</resources>
+
+

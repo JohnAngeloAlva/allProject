@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!-- START OF HEAD -->
+	<head>
+
+		<!-- PAGE TITLE -->
+		<title>Reservation | ParkingBuddy.ph</title>
+		
+		<!-- WEBSITE LOGO -->
+		<link href="../ParkingBuddyPh/Images/PBPh-Logo.png" rel="icon">
+		<link href="../ParkingBuddyPh/Images/PBPh-Logo.png" rel="apple-touch-icon"> 
+		
+		<!-- WEBSITE FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../ParkingBuddyPh/icofont/icofont.min.css">
+
+		<!-- BOOTSTRAP & MAIN CSS-->
+		<link rel="stylesheet" href="../ParkingBuddyPh/Bootstrap/bootstrap.min.css" >
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel ="stylesheet" href="../ParkingBuddyPh/CSS/Reservation-Style.css">
+
+		<!-- JQUERY & JS(BOOTSRAP) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		
+	</head>
+	<!-- END OF HEAD-->
+
+	<!-- START OF BODY -->
+	<body>
+		
+		<!--  MOBILE NAVIGATION -->
+		<button type="button" class="mobile-nav-toggle d-xl-none">
+			<i class="icofont-navigation-menu"></i>
+		</button>
+
+		<!-- HEADER & NAVIGATION -->
+		<header id="header">
+			<div class="d-flex flex-column">
+				<div class="profile">
+					<img src="../ParkingBuddyPh/Images/limos.jpg" alt="" class="img-fluid rounded-circle">
+					<h1 class="text-light"><a href="index.html">User 10969</a></h1>
+				</div>
+				<nav class="nav-menu">
+					<ul>
+						<li><a href="User Home Page.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+						<li class="active"><a href="Reservation Page.html"><i class="bx bx-user"></i> <span>Reserve Parking</span></a></li>
+						<li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Settings</span></a></li>
+						<li><a href="Home Page.html"><i class="bx bx-book-content"></i> Logout</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- END OF HEADER & NAVIGATION -->
+
+		<!-- DIV TO CENTER ALL ELEMENT -->
+		<div id="main">
+		
+			<!-- DASHBOARD -->
+			<section id="dashboard" class="dashboard">
+				<div class="container">
+					<div class="section-title">
+						<h2 id="head">Reserve Parking</h2>
+					</div>
+
+					<!-- PROMPT USER TO INPUT A DATA -->
+					<div class="col-xl-6 col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center ">
+						<h2 id="head">Reservation Details</h2>
+
+						<!-- TABLE FOR DATE AND TIME -->
+						<table>
+							<tr>
+								<td>
+									<label>	Start Date </label>
+									<input type="date" id="reservedIn" class="Date" name="reservedIn" onchange="Results()" required>
+								</td>
+								<td>
+									<label>Time:</label>
+									<input type="time" class="Time" id="timeIn" name="timeIn" >
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<label>End Date  </label>
+									<input type="date" id="reservedOut" class="Date" name="reservedOut" onchange="Results()" required>
+								</td>
+								<td>
+									<label>Time:</label>
+									<input type="time" class="Time" id="timeOut" name="timeOut" >
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<label>Your Destination: </label>
+								</td>
+							</tr>
+						</table>
+
+						<input type="text" class="Address" id="place" placeholder="Destination"><br>
+							
+						<!-- TABLE FOR INFORMATION OF USER -->
+						<h2 id="head">Personal Details</h2>
+						<table>
+							<tr>
+								<td>
+									<label>First Name</label>
+									<input class="FName" type="text" name="FirstName" id="inputFName" placeholder="First Name"></input>
+								</td>
+								<td>
+									<label>Last Name</label>
+									<input class="LName" type="text" name="LastName" id="inputLName" placeholder="Last Name"></input>
+								</td>
+							</tr>
+						</table>
+
+						<label class="Address">Address Name</label>
+						<input type="text" class="Address" placeholder="Address"><br>
+						
+						<!-- TABLE FOR CONTACT INFORMATION OF USER -->
+						<h2 id="head">Contact Details</h2>
+						<table>
+							<tr>
+								<td>
+									<label>Email</label>
+									<input type="text" class="Email" placeholder="Email">
+								</td>
+								<td>
+								</tr><tr>
+									<label id="contact">Contact Number</label>
+									<input type="text" class="Number" placeholder="Contact Number">
+								</td>
+							</tr>
+						</table>
+						<br>
+						<h2 id="head">Additional Details</h2>
+						<textarea name="info" rows="5" cols="70" placeholder="ADDITIONAL INFO HERE"></textarea><br><br>
+						
+						<!-- BUTTON -->
+						<div>
+							<button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#Reservation" onclick="Results()">Make Reservations</button>
+						</div> 
+						
+						<!-- MODAL TO SHOW THE INFORMATION PROMPTED BY THE USER -->
+						<div class="modal" id="Reservation">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title">Confirmation of Reservations</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+									
+									<div class="modal-body">
+										<table class="Computed">
+											<tr>
+												<td>Reservation Place: </td>
+												<td><input class="Result" id="places" disabled></input></td>
+											</tr>
+											<tr>
+												<td>Name: </td>
+												<td><p class="Name" id="names"></p></td>
+											</tr>
+											<tr>
+												<td>In Date:</td>
+												<td><input class="ResultIn" id="noDays" disabled></input></td>
+											</tr>
+											<tr>
+												<td>Out Date:</td>
+												<td><input class="ResultOut" id="noDay" disabled></input></td>
+											</tr>
+											<tr>
+												<td>Time In:</td>
+												<td><input class="ResultIn" id="timein" disabled></input></td>
+											</tr>
+											<tr>
+												<td>Time Out:</td>
+												<td><input class="ResultOut" id="timeout" disabled></input></td>
+											</tr>
+											<tr>
+												<td class="Line"></td>
+												<td class="Line"></td>
+											</tr>
+										</table>
+										
+										<!-- DISPLAY TOTAL RATE OF RESERVATION -->
+										<table class="Total">
+											<tr>
+												<td><label>Parking Rate: </label></td>
+												<td><input class="ResultTotal" id="parRate" disabled></input></td>
+											</tr>
+											<tr>
+												<td><label>Duration Date: </label></td>
+												<td><input class="ResultTotal" id="durDate" disabled></input></td>
+											</tr>
+											<tr>
+												<td><label>Duration Time: </label></td>
+												<td><input class="ResultTotal" id="durTime" disabled></input></td>
+											</tr>
+											<tr>
+												<td class="Line"></td>
+												<td class="Line"></td>
+											</tr>
+										</table>
+
+										<!-- DISPLAY TOTAL AMMOUNT -->
+										<table class="Total">
+											<tr>
+												<td><label>Total Amount: </label></td>
+												<td><input class="ResultTotal" id="totalAmount" disabled></input></td>
+											</tr>
+										</table>
+									</div>
+								
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+										<button type="button" class="btn btn-primary" onclick="Results()" ><a href="Reciept.html">Continue to Payment</a></button>
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+				</div>
+			</section>
+			<!-- END OF DASHBOARD -->
+
+		</div>
+		<!-- END OF DIV TO CENTER ALL ELEMENT -->
+
+		<!-- SCRIPT FOR THE MODAL AND DISPLAY THE INPUUTED DATA -->
+		<script>
+			var days, dateIn, dateOut;
+			var currDate, place;
+			var timeIn, timeOut, totalTime;
+			var totalAmount, amount;
+			var inputFName,inputLName;
+
+			// function to display data when "make registration" button is pressed
+			function Results(){
+
+				// get data of date and store it to curr date
+				dateIn = new Date(document.getElementById("reservedIn").value);
+				dateOut =new Date(document.getElementById("reservedOut").value);
+				currDate = new Date();
+
+				// conditional statemen if date is past the page will not accept
+				if (dateIn< currDate.setHours(0, 0, 0, 0)){
+					alert("ERROR!! Past Date");
+					document.getElementById("reservedIn").value =" ";
+					document.getElementById("reservedOut").value =" ";
+				}
+				if (dateOut < dateIn){
+					alert("ERROR!! Out Date");
+					document.getElementById("reservedIn").value =" ";
+					document.getElementById("reservedOut").value =" ";
+				}
+				
+				// get data of place
+				place = document.getElementById("place").value;
+				document.getElementById("places").value = place;
+
+				// display the date in and date out
+				document.getElementById("noDays").value = dateIn ;
+				document.getElementById("noDay").value = dateOut ;
+
+				// get data of time in and time out
+				timeIn =  document.getElementById("timeIn").value;
+				timeOut = document.getElementById("timeOut").value;
+				
+				// display the time in and time out
+				document.getElementById("timein").value = timeIn ;
+				document.getElementById("timeout").value = timeOut;
+
+				// display the first name and last name
+				document.getElementById("names").innerHTML = document.getElementById('inputFName').value + " " + document.getElementById('inputLName').value;
+
+				// display total rate per hour
+				document.getElementById("parRate").value = "100 per hour";
+
+				// compute date by time and display the date
+				days = (dateOut- dateIn) / (24 * 3600 * 1000);
+				document.getElementById("durDate").value = days + " Day/s";
+
+				// conditional for time and date if it past the page will not accept
+				if(timeIn < timeOut){
+					total_time = parseInt(timeOut) - parseInt(timeIn);
+				}
+				else{
+					total_time = parseInt(timeIn) - parseInt(timeOut);
+				}
+				document.getElementById("durTime").value = total_time + " Hour/s";
+
+				if(days>=1){
+					totalAmount = (total_time * days) * 100;
+					amount = totalAmount.toLocaleString('en-US', {minimumFractionDigits: 2});
+					document.getElementById("totalAmount").value = amount;
+				}
+				else if(days<=0){
+					totalAmount = total_time * 100;
+					amount = totalAmount.toLocaleString('en-US', {minimumFractionDigits: 2});
+					document.getElementById("totalAmount").value = amount;
+				}
+			}
+		</script>
+
+		<!-- SCRIPT TO STORE THE DATA IN TO LOCAL STORAGE -->
+		<script>
+			window.onbeforeunload = function (){
+			inputFName = document.getElementById('inputFName').value;
+			inputLName = document.getElementById('inputLName').value;
+			localStorage.setItem("place", place);
+			localStorage.setItem("dateIn", dateIn);
+			localStorage.setItem("dateOut", dateOut);
+			localStorage.setItem("timeIn", timeIn);
+			localStorage.setItem("timeOut", timeOut);
+			localStorage.setItem("inputFName", inputFName);
+			localStorage.setItem("inputLName", inputLName);
+			localStorage.setItem("days", days);
+			localStorage.setItem("total_time", total_time);
+			localStorage.setItem("amount", amount);
+			}
+		</script>
+
+		<!-- JQUERY & JS -->
+		<script src="js/js.js"></script>
+		<script src="js/jquery.js"></script>
+	</body>
+</html>

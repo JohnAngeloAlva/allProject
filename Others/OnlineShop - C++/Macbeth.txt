@@ -1,0 +1,9 @@
+Seller Name: Macbeth Product Code: (MCB1)  Product Name: Shirt Product Color: blue Product Size: Free-size Product Details: cotton Product Prize: 290
+
+Seller Name: Macbeth Product Code: (MCB2)  Product Name: Slim Dress Product Color: white Product Size: Free-size Product Details: silk Product Prize: 699.75
+
+Seller Name: Macbeth Product Code: (MCB3)  Product Name: Longsleeve Dress Product Color: Green Product Size: Free-size Product Details: checkered Product Prize: 550
+
+Seller Name: Macbeth Product Code: (MCB4)  Product Name: Jeans Product Color: blue Product Size: Free-size Product Details: Denim Product Prize: 1000
+
+Seller Name: Macbeth Product Code: (MCB5)  Product Name: Socks Product Color: rainbow Product Size: Free-size Product Details: cotton Product Prize: 99

@@ -1,0 +1,10 @@
+Seller Name: Adidas Product Code: (ADS1)  Product Name: Pajama Product Color: pink Product Size: Free-size Product Details: silk Product Prize: 290
+
+Seller Name: Adidas Product Code: (ADS2)  Product Name: Sleeveless Product Color: red Product Size: Free-size Product Details: cotton Product Prize: 299.75
+
+Seller Name: Adidas Product Code: (ADS3)  Product Name: tanktop Product Color: stripe blue Product Size: Free-size Product Details: chiffon Product Prize: 455
+
+Seller Name: Adidas Product Code: (ADS4)  Product Name: Blouse Product Color: Maroon Product Size: Free-size Product Details: cotton Product Prize: 269
+
+Seller Name: Adidas Product Code: (ADS5)  Product Name: Scarf Product Color: gold Product Size: Free-size Product Details: crochet Product Prize: 375
+

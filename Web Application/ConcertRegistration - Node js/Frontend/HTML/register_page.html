@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--BOOTSTRAP-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="icon" href="../PICTURES/Ph_seal_quezon_lucena.png" type="image/icon type">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/register_page.css">
+
+    <title>Register Page</title>
+</head>
+
+<body>
+
+    <!--START OF HEADER-->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home_page.html">Home Page</a>
+                <a class="navbar-brand" href="registration_page.html">Registration Page</a>
+            </div>
+        </div>
+    </nav>
+    <!--END OF HEADER-->
+
+    <!--START OF CONTAINER-->
+    <div class="row">
+        <div class="container">
+
+            <!--START OF CONTENT-->
+            <div class="col-md-7">
+
+                <!--START OF REGISTRATION DETAILS-->
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name:</label>
+                        <input type="text" class="form-control" required id="name" placeholder="Full Name">
+                        <p>(Note: Name must have alphabet characters only) </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="Seat_destination">Seat destination:</label>
+                        <select name="cars" class="form-control" id="seat_destination">
+                            <option value="Front">Front</option>
+                            <option value="Middle">Middle</option>
+                            <option value="End">End</option>
+                        </select>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone_Number">Phone Number:</label>
+                        <input type="text" class="form-control" required id="phone_num" placeholder="Phone Number">
+                        <p>(Note: Phone number patter must include '+' (+XXXXXXXXXXX)) </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="Number_of_people">Number of People:</label>
+                        <input type="number" min="1" max="10" required class="form-control" id="number_of_people" placeholder="Maximum of 10 people">
+                        <p>(Note: The range is 1 - 10 only to register )</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="Gmail">Gmail:</label>
+                        <input type="email"  pattern=".+@globex.com" size="30"class="form-control"required id="email" placeholder="Active Gmail">
+                        <p>(Note: Use an active Gmail account)</p>
+                    </div>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="validate()">Submit</button>
+                
+                </form>
+                <!--END OF REGISTRATION DETAILS-->
+
+                <!--START OF MODAL-->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- MODAL CONTENT-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Concert Registration</h4>
+                        </div>
+
+                         <!--MODAL BODY-->
+                        <div class="col-md-8">
+                            <div class="modal-body">
+                                <table >
+                                    
+                                    <tr>
+                                        <td>Name: </td>
+                                        <td><input class="form-control" id="names" disabled></input></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seat destination:</td>
+                                        <td><input class="form-control" id="seat" disabled></input></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number:</td>
+                                        <td><input class="form-control" id="phone_nums" disabled></input></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Number of People:</td>
+                                        <td><input class="form-control" id="people" disabled></input></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gmail:</td>
+                                        <td><input class="form-control" id="emails" disabled></input></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img class="seal" src="../PICTURES/images.png" alt="Lucena City seal" >
+                        </div>
+                        <!--END MODAL BODY-->
+
+                        <!--MODAL FOOTER-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            <a href="registration_page.html"><button id="closeModal" type="button" class="btn btn-primary" onclick="submitForm()" >Register</button></a>
+                        </div>
+                        <!--END MODAL FOOTER-->
+
+                      </div>
+                    </div>
+                </div>
+                <!--END OF MODAL-->
+            </div>
+
+            <div class="col-md-5">
+                <img class="concert" src="../PICTURES/bamboo.jpg" alt="Concert Bamboo">
+            </div>
+            <!--END OF CONTENT-->
+
+        </div>
+    </div>
+    <!--END OF CONTAINER-->
+
+    <script>
+        //SCRIPT SUBMIT FORM
+        function submitForm(){
+
+            let url = ' http://localhost:8080/event/registration/  ';
+
+            //RETRIEVED THE INPUTTED DATA TO SEND
+            let dataSubmit = JSON.stringify({
+                                        'Name': $("#name").val(),
+                                        'Seat_Destination': $("#seat_destination").val(),
+                                        'Phone_Num': $('#phone_num').val(),
+                                        'Num_of_People': $('#number_of_people').val(),
+                                        'Gmail': $('#email').val()
+                                    });
+            //POST THE DATA
+            $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: dataSubmit,
+                    contentType: 'application/json',
+                    success: function(data, status){
+                                $("#name").val('');
+                                $("#seat_destination").val('');
+                                $("#phone_num").val('');
+                                $("#number_of_people").val('');
+                                $("#email").val('');
+                                fetchList()
+                    },
+                    dataType: 'json'
+
+            });
+        }
+        //END OF SCRIPT SUBMIT FORM
+
+        //SCRIPT VALIDATION
+        function validate(){
+            let uNames, seats, pNum, peopleNum, email;
+            
+            //VALIDATION FOR NAME
+            var letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
+            uNames = $('#name').val();
+            name = uNames.toUpperCase();
+            if(uNames.match(letters)){
+                $('#names').val(name);
+            }
+            else{
+                alert("Name must have alphabet characters only!");
+                window.history.go(0);
+                return false;
+            }
+            
+            //VALIDATION FOR SEAT DESTINATION
+            seats = $('#seat_destination').val();
+            $('#seat').val(seats);
+            
+            //VALIDATION FOR PHONE NUMBER
+            var numbers = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+            pNum = $('#phone_num').val();
+            if(pNum.match(numbers)){
+                $('#phone_nums').val(pNum);
+            }
+            else{
+                alert("Phone Number must +XXXXXXXXXXX (+11 digits)");
+                window.history.go(0);
+                return false;
+            }
+            
+            //VALIDATION  PHONE NUMBER
+            peopleNum = $('#number_of_people').val();
+            if (peopleNum == ''){
+                alert('Please enter Number Of People');
+                window.history.go(0);
+            }
+            if(peopleNum > 10){
+                alert('The range is 1 - 10 only to register');
+                window.history.go(0);
+            }
+            else{
+                $('#people').val(peopleNum);
+            }
+            
+            //VALIDATION FOR EMAILS
+            email = $('#email').val();
+            let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(email.match(mailformat)){
+                $('#emails').val(email);
+                return true;
+            }
+            else{
+                alert("You have entered an invalid email address!");
+                window.history.go(0);
+                return false;
+            }
+            
+        }
+    
+
+    </script>
+
+</body>
+</html>

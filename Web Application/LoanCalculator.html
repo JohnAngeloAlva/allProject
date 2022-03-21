@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <style>
+        .Box{
+            box-sizing: content-box;  
+            border: 5px solid rgb(185, 5, 5);
+            border-top: 20px solid rgb(185, 5, 5);
+            border-radius: 10px;
+            width: 35%;
+        }
+        .Tittle{
+            padding-top: 2px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid red;
+        }
+        .Content{
+            margin-left: 25px;
+        }
+        .Input{
+            border: 1px solid black;
+            width: 200px;
+            padding: 8px;
+            text-align: left;
+            margin-left: 50px;
+            border-radius: 5px;
+        }
+        .PaymentTerms{
+            padding: 8px;
+            padding-right: 57px;
+            text-align: left;
+            border: 1px solid black;
+            margin-left: 50px;
+            border-radius: 5px;
+            margin-left: 100;
+        }
+        .Button{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .Computebtn{
+            padding: 10px;
+            background-color: rgb(185, 5, 5);
+            color: white;
+            font-weight: bold;
+            width: 170px;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 45px;
+            border-color: rgb(185, 5, 5);
+        }
+        .Clearbtn{
+            padding: 10px;
+            background-color: rgb(185, 5, 5);
+            color: white;
+            font-weight: bold;
+            width: 170px;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 20px;
+            border-color: rgb(185, 5, 5);
+        }
+        .ComputedResult{
+            background-color: rgb(214, 205, 205);
+            padding: 15px;
+        }
+        .Result{
+           border:hidden;
+           background-color: rgb(214, 205, 205);
+           margin-left: 50px;
+           width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Box">
+        <h2 class="Tittle">Loan Calculator</h2>
+        <div class="Content">
+            <table>
+                <tr>
+                    <td><h3>Loan Amount</h3></td>
+                    <td><input class="Input" type="text" name="InputAmount" id="inputAmount" placeholder="Please Enter Amount"></input></td>
+                </tr>
+                <tr>
+                    <td><h3>Payment Terms</h3></td>
+                    <td><select class="PaymentTerms" name="PaymentTerms" id="paymentTerms">
+                        <option>Please Select Months</option>
+                        <option value="12 months">12 months</option>
+                        <option value="18 months">18 months</option>
+                        <option value="24 months">24 months</option>
+                        <option value="36 months">36 months</option>
+                        <option value="48 months">48 months</option>
+                        <option value="60 months">60 months</option>
+                      </select>
+                    </td>
+            </table>
+        </div>
+        <div class="Button">
+            <table>
+                <tr>
+                    <td><button class="Computebtn" onclick="compute()">Compute</button></td>
+                    <td><button class="Clearbtn" onclick="cleared()">Clear</button></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="ComputedResult">
+            <h3>Your computed results are:</h3>
+            <table>
+                <tr>
+                    <td>Loan Amount:</td>
+                    <td><input class="Result" id="loanAmount" disabled></input></td>
+                </tr>
+                <tr>
+                    <td>Interest:</td>
+                    <td><input class="Result" id="interest" disabled></input></td>
+                </tr>
+                <tr>
+                    <td>Monthly Amortization:</td>
+                    <td><input class="Result" id="monthlyAmor" disabled></input></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var loanAmount, paymentTerms, interest, monthlyAmor, amount, interestF, mAmortization;
+        
+        function compute(){
+            loanAmount = parseFloat(document.getElementById('inputAmount').value);
+            amount = loanAmount.toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('loanAmount').value = "₱" + amount;
+
+            paymentTerms = parseFloat(document.getElementById('paymentTerms').value);
+            if (paymentTerms == 12){
+                interest = (paymentTerms * loanAmount) * 0.01;
+            }
+            else if (paymentTerms == 18){
+                interest = (paymentTerms * loanAmount) * 0.01;
+            }
+            else if (paymentTerms == 24){
+                interest = (paymentTerms  * loanAmount) * 0.01;
+            }
+            else if (paymentTerms == 36){
+                interest = (paymentTerms  * loanAmount) * 0.01;
+            }
+            else if (paymentTerms == 48){
+                interest = (paymentTerms  * loanAmount) * 0.01;
+            }
+            else if (paymentTerms == 60){
+                interest = (paymentTerms  * loanAmount) * 0.01;
+            }
+            
+            interestF = interest.toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('interest').value = "₱" + interestF;
+
+            monthlyAmor = (loanAmount + interest) / paymentTerms;
+            mAmortization = monthlyAmor.toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('monthlyAmor').value = "₱" + mAmortization;
+        }
+        function cleared(){
+            document.getElementById('inputAmount').value = "";
+            document.getElementById('loanAmount').value = "";
+            document.getElementById('paymentTerms').value = "Please Select Months";
+            document.getElementById('interest').value = "";
+            document.getElementById('monthlyAmor').value = "";
+        }
+    </script>
+    
+</body>
+</html>

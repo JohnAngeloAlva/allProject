@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="register-login.css" >
+        
+            
+            <link rel="stylesheet" href="../libraries/assets/css/slicknav.css">
+            
+            
+            
+            <link rel="stylesheet" href="../libraries/assets/css/style.css">
+    </head>
+    <body>
+        <div class="header-area header-transparrent">
+            <div class="headder-top header-sticky">
+                 <div class="container">
+                     <div class="row align-items-center">
+                         <div class="col-lg-3 col-md-2">
+                             <!-- Logo -->
+                             <div class="logo">
+                                 <a href="homepage.html"><img src="../libraries/assets/img/logo/logo3.png" alt=""></a>
+                             </div>  
+                         </div>
+                         <div class="col-lg-9 col-md-9">
+                             <div class="menu-wrapper">
+                                 <!-- Main-menu -->
+                                 <div class="main-menu">
+                                     <nav class="d-none d-lg-block">
+                                         <ul id="navigation">
+                                             <li><a href="../homepage.html">Home</a></li>
+                                             <li><a href="../job_listing.html">Find a Jobs </a></li>
+                                             <li><a href="../about.html">About</a></li>
+                                             <li><a href="../contact.html">Contact</a></li>
+                                         </ul>
+                                     </nav>
+                                 </div>          
+                                 
+                             </div>
+                         </div>
+                         <!-- Mobile Menu -->
+                         <div class="col-12">
+                             <div class="mobile_menu d-block d-lg-none"></div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+                         
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-3 register-left">
+                    <img src="../libraries/assets/img/logo/login-logo.png" alt=""/>
+                    <h3 style="color: white;">Welcome</h3>
+                    <p style="color: white;">Login your account for you to find a job!</p>
+                    <a href="register-form.html">
+                        <input type="submit" name="" value="Register"/><br/>
+                    </a>
+                </div>
+        
+                <!-- EMPLOYEE LOGIN -->
+                <div class="col-md-9 register-right">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Login as a Employee</h3>
+                            <div class="row register-form">
+                                
+                                <div class="col-md-10">
+                                    
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email *" value="" required="True"/>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password *" value="" required="True"/>
+                                    </div>
+                                   
+                                
+                                </div>
+                                
+                                <div class="col-md-10">
+                                    <a href="../User/employee-homepage.html">
+                                        <input  type="submit" class="btnRegister" value="Login" id="log"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF EMPLOYEE LOGIN -->
+
+                        <!-- HIRER LOGIN -->
+                        <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <h3  class="register-heading">Login as a Hirer</h3>
+                            <div class="row register-form">
+                                <div class="col-md-10">
+                                    
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="HEmail" placeholder="Email *" value="" required="True"/>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="HPassword" placeholder="Password *" value="" required="True"/>
+                                    </div>
+                                   
+                                
+                                </div>
+                                
+                                <div class="col-md-10">
+                                    <a href="../Hirer/hirer-homepage.html">
+                                        <input type="submit" class="btnRegister" onclick="fetchListHirer()"  value="Login" />
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF HIRER LOGIN -->
+
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/main.js"></script>
+
+        <!-- Javascript Function -->
+        <script>
+
+            $(document).ready(function(){
+
+                fetchListHirer();
+
+            });
+
+            function fetchListHirer() {
+                let hirerurl = 'http://localhost:8080/registration/accountHirer';
+
+                $.ajax({
+                    url: hirerurl,
+                    success: function(data, status){
+                        populateData(data.accounts);
+                    },
+                        dataType: "json"
+                    });
+            }
+
+            function populateDataHirer(data) {
+                let hirerUser = document.getElementById('HEmail');
+                let hirerPass = document.getElementById('HPassword');
+
+                data.forEach(function (account) {
+
+                    if(account.Email == hirerUser){
+                        alert(hirerUser);
+                    }
+
+                });
+            }
+
+        </script>
+    </body>
+</html>
+

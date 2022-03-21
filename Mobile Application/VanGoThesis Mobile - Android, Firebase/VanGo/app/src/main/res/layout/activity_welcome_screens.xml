@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreens"
+    android:background="@drawable/pick_bg"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="318dp"
+            android:layout_height="287dp"
+            android:layout_marginTop="190dp"
+            android:layout_gravity="center"
+            android:src="@drawable/head_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="VanGo"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratregular"
+            android:text="We will help you reserve your seat"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/montserratregular"
+                android:text="Login"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/montserratregular"
+                android:text="Signup"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification">
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="159dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fcnNumber" />
+
+    <TextView
+        android:id="@+id/fcnNumber"
+
+        android:layout_width="128dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="142dp"
+        android:text="cE6HUZY6QMyUV5E_Qp0kMk:APA91bEyPHI8X8gpl-9Bmk9HQzahEjppAfayAu7iRBtFaDUdRrcj_VMptKoK0YRr5nlAKHAa_DsKuMMy3Lc2FpSviCiosy2kOYgAzbkg7q9hP3MvWh_JTuVsIR35LTgbbjEN1Ss3hA20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

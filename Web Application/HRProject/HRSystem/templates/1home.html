@@ -1,0 +1,69 @@
+<html>
+    <head>
+      <title>Homepage</title>
+      <meta charset="utf-8">
+
+      <!-- Bootsrap & Jquery libraries -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <!-- importing your own css by Static FIles -->
+      {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+      <!-- Style for the navigation bar -->
+      <style>
+        .navbar {
+          margin-bottom: 0;
+          border-radius: 0;
+          background-color: #435d7d;
+        } 
+      </style>
+
+    </head>
+    <body>
+        <!-- Start of Navigation Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a style="color: white;" class="navbar-brand" href="/">Employee System <b>|</b></a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a style="color: white;" href="/employeeList">Employee Record</a></li>
+                <li><a style="color: white;" href="/leaveFormList">Leave Record</a></li>
+                <li><a style="color: white;" href="/traineeList">Trainee List</a></li>
+				        <li><a style="color: white;" href="/departmentList">Department List</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End of Navigation Bar -->
+
+          <!-- Start of Body -->
+          <div class="jumbotron">
+            <div class="container text-center">
+              <h1>HR System for Employees</h1>
+
+              <div class="content-slider">
+                <div class="slider">
+                  <div class="mask">
+                    <ul>
+                      <li class="anim1">
+                        <div class="quote">C jae Limos</div>
+                      </li>
+                      <li class="anim2">
+                        <div class="quote">John Angelo Alva</div>
+                      </li>
+                      <li class="anim3">
+                        <div class="quote">Xena Pericas</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Body -->
+    </body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VanGo | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="css/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="css/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+  <script src = 
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> 
+      </script> 
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="image/V.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+     
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="image/V.png" alt="VanGo Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">VanGo</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        
+        <div class="info">
+          <a href="#" class="d-block">Admin</a>
+        </div>
+      </div>
+
+     
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+               <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon fas fa-user"></i>
+                  <p>
+                    Commuter
+                  </p>
+                </a>
+
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-user-slash"></i>
+                  <p>
+                    Driver
+                  </p>
+                </a>
+
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-shuttle-van"></i>
+                  <p>
+                    Van
+                  </p>
+                </a>
+                
+              </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            
+            <h1 class="m-0">Dashboard</h1>
+          </div><!-- /.col -->
+          
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3 id="commuter"></h3>
+
+                <p>Commuters</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div>
+             
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3 id="driver"></h3>
+
+                <p>Drivers</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>44</h3>
+
+                <p>Van</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-person-add"></i>
+              </div>
+             
+            </div>
+          </div>
+        
+        </div>
+       
+          <section class="content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">Table for Commuter</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                          <th>No.</th>
+                          <th>Full Name</th>
+                          <th>Phone Number</th>
+                          <th>Seat ID</th>
+                          <th>Email</th>
+                          <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tbody1">
+                        
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+                  
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">Table for Driver</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                          <th>No.</th>
+                          <th>Full Name</th>
+                          <th>Age</th>
+                          <th>Phone Number</th>
+                          <th>Terminal</th>
+                          <th>Destination</th>
+                          <th>Plate Number</th>
+                          <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tbody2">
+                        </tbody>
+                        
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+          </section>
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+ 
+
+  
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+  
+</script>
+
+<script type="module">
+  var comID = 0;
+  var driverID = 0;
+  var tbody = document.getElementById('tbody1');
+  var tbody1 = document.getElementById('tbody2');
+  function addItemtoTable(name, phoneNum, seat, email){
+      let trow = document.createElement("tr");
+      let td1 = document.createElement('td');
+      let td2 = document.createElement('td');
+      let td3 = document.createElement('td');
+      let td4 = document.createElement('td');
+      let td5 = document.createElement('td');
+
+      td1.innerHTML= ++comID;
+      td2.innerHTML= name;
+      td3.innerHTML= phoneNum;
+      td4.innerHTML= seat;
+      td5.innerHTML= email;
+
+      trow.appendChild(td1);
+      trow.appendChild(td2);
+      trow.appendChild(td3);
+      trow.appendChild(td4);
+      trow.appendChild(td5);
+
+      tbody.appendChild(trow);
+      var colCount = $("#tbody1 tr").length;
+      $('#commuter').text(colCount);
+  }
+
+  
+  function AddAllItems(TheUser){
+      comID = 0;
+      tbody.innerHTML="";
+      TheUser.forEach(element => {
+          addItemtoTable(element.fullName, element.phoneNum, element.seatID, element.email);
+
+      });
+  }
+
+  function addItemtoDriver(name, age, phoneNum, terminal, destination, plateNum){
+      let trow = document.createElement("tr");
+      let td1 = document.createElement('td');
+      let td2 = document.createElement('td');
+      let td3 = document.createElement('td');
+      let td4 = document.createElement('td');
+      let td5 = document.createElement('td');
+      let td6 = document.createElement('td');
+      let td7 = document.createElement('td');
+
+      td1.innerHTML= ++driverID;
+      td2.innerHTML= name;
+      td3.innerHTML= age;
+      td4.innerHTML= phoneNum;
+      td5.innerHTML= terminal;
+      td6.innerHTML= destination;
+      td7.innerHTML= plateNum;
+
+      trow.appendChild(td1);
+      trow.appendChild(td2);
+      trow.appendChild(td3);
+      trow.appendChild(td4);
+      trow.appendChild(td5);
+      trow.appendChild(td6);
+      trow.appendChild(td7);
+      tbody1.appendChild(trow);
+      var colCount = $("#tbody2 tr").length;
+      $('#driver').text(colCount);
+  }
+
+  
+  function AddAllDriver(TheUser){
+      driverID = 0;
+      tbody1.innerHTML="";
+      TheUser.forEach(element => {
+          addItemtoDriver(element.fullName, element.age, element.phoneNum, element.terminal, element.destination, element.plateNumber);
+
+      });
+  }
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+  import { getDatabase, ref, child, onValue, get } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+  
+  const firebaseConfig = {
+      apiKey: "AIzaSyADIizDujSp7DQu8Znbwu-KK2P67ClK5Ow",
+      authDomain: "vango-9cacc.firebaseapp.com",
+      databaseURL: "https://vango-9cacc-default-rtdb.firebaseio.com",
+      projectId: "vango-9cacc",
+      storageBucket: "vango-9cacc.appspot.com",
+      messagingSenderId: "595098715715",
+      appId: "1:595098715715:web:483026257a0c936808f6f6",
+      measurementId: "G-VK3B73DCR3"
+  };
+
+  
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getDatabase();
+  
+
+  function getAllDataOnce(){
+      const dbRef = ref(db);
+      get(child(dbRef, "Users"))
+      .then((snapshot) => {
+          var commuter = [];
+          snapshot.forEach(childSnapshot =>{
+              commuter.push(childSnapshot.val());
+             
+              
+          });
+          AddAllItems(commuter);
+      });
+      get(child(dbRef, "SmDriverProfile"))
+      .then((snapshot) => {
+          var commuter = [];
+          snapshot.forEach(childSnapshot =>{
+              commuter.push(childSnapshot.val());
+              
+          });
+          AddAllDriver(commuter);
+      });
+  }
+
+  window.onload = getAllDataOnce;
+  
+
+</script>
+
+<script>
+
+</script> 
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="js/dashboard.js"></script>
+</body>
+</html>

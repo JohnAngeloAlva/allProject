@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/add.xml" value="0.24145299145299146" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/available.xml" value="0.2942708333333333" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.2942708333333333" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/box.xml" value="0.2942708333333333" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/button.xml" value="0.13" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/circle.xml" value="0.2942708333333333" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/circle2.xml" value="0.2942708333333333" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.2942708333333333" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/profile_head.xml" value="0.2942708333333333" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/rectangle.xml" value="0.33" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/drawable/rectangle_bottom.xml" value="0.24145299145299146" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout-v21/activity_commuter_profiles.xml" value="0.175" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout-xhdpi/activity_login.xml" value="0.3015625" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout-xhdpi/activity_reservation.xml" value="0.22" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout-xxhdpi/activity_login.xml" value="0.20104166666666667" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout-xxhdpi/activity_reservation.xml" value="0.22871376811594202" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_add_reservation.xml" value="0.22" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_additional_info.xml" value="0.20104166666666667" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_choose_user.xml" value="0.20652173913043478" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_commuter_home.xml" value="0.2" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_commuter_homepage.xml" value="0.14635416666666667" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_commuter_logins.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_commuter_profile.xml" value="0.33" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_commuter_profiles.xml" value="0.16" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_delete_reservation.xml" value="0.278125" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_driver_atimonan.xml" value="0.22580645161290322" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_driver_mauban.xml" value="0.17391304347826086" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_driver_san_andres.xml" value="0.22580645161290322" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_driver_tayabas.xml" value="0.22" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_driver_tayabas2.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_driver_tayabass.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_driver_view_van_list.xml" value="0.16623931623931623" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_login.xml" value="0.751453488372093" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_mauban_reservation.xml" value="0.14635416666666667" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_notification.xml" value="0.2223731884057971" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_reservation.xml" value="0.33" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_san_andres_reservation.xml" value="0.17391304347826086" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_show_reserve.xml" value="0.33" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_signup.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_tayabas_reservations.xml" value="0.25" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_testing.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/activity_verify_email.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/addroute.xml" value="0.21195652173913043" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/arrived_route_alert.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/bottom_addroute.xml" value="0.25" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/delete_route_alert.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_additional_info.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_homepage.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_login.xml" value="0.15677083333333333" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_login_choice.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_login_email.xml" value="0.16666666666666666" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_profile.xml" value="0.2" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_signup.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_signup_choice.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/driver_signup_number.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/edit_profile.xml" value="0.25" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/edit_route.xml" value="0.33" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/edit_route_alert.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/full.xml" value="0.25" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/marker_menu.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/operator_driver_item.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/operator_driver_list.xml" value="0.21240942028985507" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/operator_show_driver_info.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/profile_verification_alert.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/show_route.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/sign.xml" value="0.22" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/success_addroute.xml" value="0.3109048723897912" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/success_userid.xml" value="0.2282051282051282" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/van_item.xml" value="0.29375" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/layout/van_list.xml" value="0.2" />
+        <entry key="..\:/D/System (Thesis)/VanGo/app/src/main/res/menu/bottom_menu.xml" value="0.2282051282051282" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_atimonan_reservation.xml" value="0.18461538461538463" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_driver_atimonan.xml" value="0.1" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_driver_mauban.xml" value="0.1" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_driver_san_andres.xml" value="0.1" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_driver_tayabas.xml" value="0.16" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_driver_view_van_list.xml" value="0.18461538461538463" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/driver_profile.xml" value="0.18461538461538463" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/driver_send_sms.xml" value="0.1" />
+        <entry key="..\:/Users/Alva/Documents/AndroidStudioProjects/VanGo/app/src/main/res/layout/edit_route_login.xml" value="0.2" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/bottom_nav.xml" value="0.217" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/button.xml" value="0.217" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/circle.xml" value="0.217" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/circle_driver.xml" value="0.217" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/edit_van.xml" value="0.217" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2775" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/list_bg.xml" value="0.138" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/list_driver_bg.xml" value="0.217" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/drawable/rectangle.xml" value="0.217" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_add_reservation.xml" value="0.2" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_additional_info.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_choose_user.xml" value="0.2" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_commuter_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_commuter_forgot_password.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_commuter_home.xml" value="0.25" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_commuter_homepage.xml" value="0.17617753623188406" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_commuter_logins.xml" value="0.22" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_delete_reservation.xml" value="0.18" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_driver_tayabas.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_driver_view_van_list.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_notification.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_show_reserve.xml" value="0.16" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_splash_screen.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_tayabas_reservations.xml" value="0.18" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/activity_verify_email.xml" value="0.25" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/addroute.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/arrived_route_alert.xml" value="0.2" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/bottom_addroute.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/commuter_edit_profile.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/delete_route_alert.xml" value="0.25" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/driver_additional_info.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/driver_login_email.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/driver_send_sms.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/driver_signup.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/driver_signup_choice.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/driver_signup_number.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/edit_profile.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/edit_route.xml" value="0.22" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/edit_route_alert.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/edit_route_login.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/full.xml" value="0.25" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/marker_menu.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/operator_driver_item.xml" value="0.22" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/operator_driver_list.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/operator_homepage.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/operator_login.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/operator_show_driver_info.xml" value="0.22" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/operator_show_route.xml" value="0.18" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/operator_terminal_alert.xml" value="0.2" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/operator_verification_alert.xml" value="0.16" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/profile_verification_alert.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/show_route.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/sign.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/success_addroute.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/success_userid.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/trys.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/van_item.xml" value="0.25" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/layout/van_list.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/menu/bottom_menu.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/cjae/AndroidStudioProjects/VanGo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.202991452991453" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/available.xml" value="0.16452991452991453" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/bottom_menu.xml" value="0.1606837606837607" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.1606837606837607" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/box.xml" value="0.16452991452991453" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/box_stroke_out.xml" value="0.145" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/button.xml" value="0.1606837606837607" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/circle.xml" value="0.16452991452991453" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/circle2.xml" value="0.1606837606837607" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/dialog_bg.xml" value="0.16452991452991453" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/home.xml" value="0.11324786324786325" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/rectangle.xml" value="0.16452991452991453" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/rectangle_bottom.xml" value="0.1606837606837607" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/reserved.xml" value="0.16452991452991453" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/drawable/yourseat.xml" value="0.16452991452991453" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-hdpi/activity_welcome_screen.xml" value="0.184375" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-mdpi/activity_welcome_screen.xml" value="0.4466666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw1080dp/activity_welcome_screen.xml" value="0.184375" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw220dp/welcome_screen.xml" value="0.15" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw320dp/activity_welcome_screen.xml" value="0.184375" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw320dp/welcome_screen.xml" value="0.15" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw360dp/activity_signup.xml" value="0.184375" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw360dp/activity_welcome_screen.xml" value="0.184375" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw360dp/welcome_screen.xml" value="0.1638888888888889" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw420dp/welcome_screen.xml" value="0.2765625" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw480dp/welcome_screen.xml" value="0.2025" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-sw720dp/activity_welcome_screen.xml" value="0.13828125" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-xhdpi/activity_login.xml" value="0.4466666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-xhdpi/activity_signup.xml" value="0.6" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-xhdpi/activity_welcome_screen.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-xxhdpi/activity_login.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-xxhdpi/activity_signup.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout-xxhdpi/activity_welcome_screen.xml" value="0.184375" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_add_reservation.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_additional_info.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_atimonan_reservation.xml" value="0.1294871794871795" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_choose_user.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_commuter_dashboard.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_commuter_forgot_password.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_commuter_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_commuter_homepage.xml" value="0.13999999999999999" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_commuter_homepages.xml" value="0.11851851851851852" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_commuter_logins.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_commuter_profile.xml" value="0.1" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_commuter_profiles.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_delete_reservation.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_driver_atimonan.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_driver_forgot_password.xml" value="0.1" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_driver_mauban.xml" value="0.1294871794871795" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_driver_san_andres.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_driver_tayabas.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_driver_view_van_list.xml" value="0.14743589743589744" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_log_sign_choose_user.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_mauban_reservation.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_notification.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_privacy_policy.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_reservation.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_san_andres_reservation.xml" value="0.1294871794871795" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_search.xml" value="0.14936708860759493" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_show_reserve.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_sign_choose_user.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_signup.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_signup2.xml" value="0.3333333333333333" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_splash_screen.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_tayabas_reservations.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_terms_and_condition.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_testing.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_tryy.xml" value="0.1" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_verify_email.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_welcome_screen.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/activity_welcome_screens.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/addroute.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/arrived_route_alert.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/bottom_addroute.xml" value="0.14743589743589744" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/choose_user.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/commuter_edit_profile.xml" value="0.14743589743589744" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/delete_route_alert.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_additional_info.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_homepage.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_login.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_login_choice.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_login_email.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_profile.xml" value="0.1" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_send_sms.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_signup.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_signup_choice.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/driver_signup_number.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/edit_profile.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/edit_route.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/edit_route_alert.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/edit_route_login.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/fragment_homefrag.xml" value="0.14354066985645933" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/fragment_profilefrag.xml" value="0.1" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/full.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/marker_menu.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/operator_driver_item.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/operator_driver_list.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/operator_homepage.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/operator_login.xml" value="0.14743589743589744" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/operator_show_driver_info.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/operator_show_route.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/operator_terminal_alert.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/operator_verification_alert.xml" value="0.14743589743589744" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/profile_verification_alert.xml" value="0.14743589743589744" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/show_route.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/sign.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/success_addroute.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/success_userid.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/trys.xml" value="0.1" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/van_item.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/van_list.xml" value="0.11333333333333334" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/welcome_screen.xml" value="0.22" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/welcome_screen1.xml" value="0.15" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/layout/welcome_screen2.xml" value="0.13333333333333333" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/menu/bottom_driver_menu.xml" value="0.15128205128205127" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/menu/bottom_menu.xml" value="0.14743589743589744" />
+        <entry key="..\:/kotlinSUMMER/VanGo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

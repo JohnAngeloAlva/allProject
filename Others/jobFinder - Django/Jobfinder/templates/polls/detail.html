@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Details of the Students</title>
+
+    <style>
+        .form-control{
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            font-size: medium;
+            color: black;
+        }
+        .form-group label{
+            font-size: large;
+        }
+        thead{
+            font-size: large;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand"></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="container">
+
+            <div class="col-md-12">
+                <h2 style="text-align: center;">Student Details of {{ job.jobTitle  }}</h2><br />
+            </div>
+
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title:</label>
+                        <input type="text" class="form-control" value="{{ job.jobTitle }}" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="jobCategory">Job Category:</label>
+                        <input type="text" class="form-control" value="{{ job.jobCategory }}" disabled>
+                    </div>
+                   
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Job Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% csrf_token %}
+                            {% for employee in job.employee_set.all %}
+                                <tr>
+                                    <td>
+                                        <h5>{{ employee.fullname }}</h5>
+                                    </td>
+
+                                    <td>
+                                        <h5>{{ employee.email }}</h5>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                    </tbody>
+                </table>
+                <a href="{% url 'polls:index' %}"><button style="float: right;" class="btn btn-primary">Return to List</button></a>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

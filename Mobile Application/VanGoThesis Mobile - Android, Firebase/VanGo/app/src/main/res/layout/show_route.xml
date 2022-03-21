@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:comtext=".ShowRouteInfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="Edit details"
+                    android:textSize="12dp"
+                    app:backgroundTint="#BFA780"/>
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/driverName"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/fareRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/emailAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/plateNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/fcmNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+</RelativeLayout>

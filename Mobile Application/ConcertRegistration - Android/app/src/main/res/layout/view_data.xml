@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <EditText
+        android:id="@+id/editTextEditGmail"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Gmail"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditTotalP" />
+
+    <EditText
+        android:id="@+id/editTextEditTotalP"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Total Number of People"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditPnumber" />
+
+    <EditText
+        android:id="@+id/editTextEditPnumber"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditCategory" />
+
+    <EditText
+        android:id="@+id/editTextEditCategory"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Category"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditSeat" />
+
+    <EditText
+        android:id="@+id/editTextEditSeat"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Seat"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditName" />
+
+    <EditText
+        android:id="@+id/editTextEditName"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditID" />
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:layout_width="117dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:onClick="refresh"
+        android:text="Refresh Data"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textViewData" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="119dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:onClick="search"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextSearch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="113dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="4dp"
+        android:onClick="deleteD"
+        android:text="Delete All"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewData" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:onClick="editD"
+        android:text="Edit Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditGmail" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="328dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch" />
+
+    <EditText
+        android:id="@+id/editTextEditID"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter ID"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="266dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="15dp"
+        android:text="Enter Data to Edit/Delete"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:onClick="deleteOneD"
+        android:text="Delete"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditGmail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

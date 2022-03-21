@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!-- START OF HEAD -->
+    <head>
+
+		 <!-- PAGE TITLE -->
+		<title>Receipt | ParkingBuddy.ph</title>
+
+		<!-- WEBSITE LOGO -->
+		<link href="../ParkingBuddyPh/Images/PBPh-Logo.png" rel="icon">
+		<link href="../ParkingBuddyPh/Images/PBPh-Logo.png" rel="apple-touch-icon"> 
+		
+		<!-- WEBSITE FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../ParkingBuddyPh/icofont/icofont.min.css">
+
+		<!-- BOOTSRAP & MAIN CSS-->
+		<link rel="stylesheet" href="../ParkingBuddyPh/Bootstrap/bootstrap.min.css" >
+		<link rel ="stylesheet" href="../ParkingBuddyPh/CSS/Reservation-Style.css">
+	
+		<!-- JQUERY & JS(BOOTSTRAP) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	</head>
+	<!-- END OF HEAD -->
+
+	<!-- START OF BODY -->
+	<body>
+
+		<!--  MOBILE NAVIGATION -->
+		<button type="button" class="mobile-nav-toggle d-xl-none">
+			<i class="icofont-navigation-menu"></i>
+		</button>
+
+		<!-- NAVIGATION & HEADER  -->
+		<header id="header">
+			<div class="d-flex flex-column">
+
+				<div class="profile">
+					<img src="../ParkingBuddyPh/Images/limos.jpg" alt="" class="img-fluid rounded-circle">
+					<h1 class="text-light"><a href="index.html">User 10969</a></h1>
+				</div>
+
+				<nav class="nav-menu">
+					<ul>
+						<li><a href="User Home Page.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+						<li class="active"><a href="Reservation Page.html"><i class="bx bx-user"></i> <span>Reserve Parking</span></a></li>
+						<li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Settings</span></a></li>
+						<li><a href="Home Page.html"><i class="bx bx-book-content"></i> Logout</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+		<!-- END OF NAVIGATION & HEADER  -->
+	
+		<!-- DIV TO CENTER ALL ELEMENT -->
+		<div id="main">
+
+			<!--  DASHBOARD -->
+			<section id="dashboard" class="dashboard">
+				<div class="container">
+
+					<div class="section-title">
+						<h2 id="head">Confirmation of Reservations</h2>
+					</div>
+			
+					<div>
+
+						<!-- TABLE FOR DISPLAYING THE DATA FROM RESERVATION PAGE -->
+						<table class="Computed">
+							<tr>
+								<td>Reservation Place: </td>
+								<td><input class="Result" id="places" disabled></input></td>
+							</tr>
+							<tr>
+								<td>Name: </td>
+								<td><p class="Name" id="names"></p></td>
+							</tr>
+							<tr>
+								<td>In Date:</td>
+								<td><input class="ResultIn" id="noDays" disabled></input></td>
+							</tr>
+							<tr>
+								<td>Out Date:</td>
+								<td><input class="ResultOut" id="noDay" disabled></input></td>
+							</tr>
+							<tr>
+								<td>Time In:</td>
+								<td><input class="ResultIn" id="timein" disabled></input></td>
+							</tr>
+							<tr>
+								<td>Time Out:</td>
+								<td><input class="ResultOut" id="timeout" disabled></input></td>
+							</tr>
+							<tr>
+								<td class="Line"></td>
+								<td class="Line"></td>
+							</tr>
+						</table>
+
+						<!-- TABLE TO DISPLAY TOTAL AMOUNT OF RESERVATION -->
+						<table class="Total">
+							<tr>
+								<td><label>Parking Rate: </label></td>
+								<td><input class="ResultTotal" id="parRate" disabled></input></td>
+							</tr>
+							<tr>
+								<td><label>Duration Date: </label></td>
+								<td><input class="ResultTotal" id="durDate" disabled></input></td>
+							</tr>
+							<tr>
+								<td><label>Duration Time: </label></td>
+								<td><input class="ResultTotal" id="durTime" disabled></input></td>
+							</tr>
+							<tr>
+								<td class="Line"></td>
+								<td class="Line"></td>
+							</tr>
+						</table>
+						<table class="Total">
+							<tr>
+								<td><label>Total Amount: </label></td>
+								<td><input class="ResultTotal" id="totalAmount" disabled></input></td>
+							</tr>
+						</table>
+					</div>
+
+					<button type="button" class="btn btn-primary float-right"onclick="window.print()">Print this page</button>
+				</div>
+			</section>
+			<!-- END OF DASHBOARD -->
+
+		</div>
+		<!-- END OF DIV TO CENTER ALL ELEMENT -->
+
+		<!-- JQUERY & SCRIPT -->
+		<script>
+
+			// function to get the item from register page
+			// using localstorage to store data from another page
+			window.onload = function () {  
+			var days, dateIn, dateOut;
+			var currDate, place, places;
+			var timeIn, timeOut, totalTime;
+			var totalAmountm, amount;
+			var inputFName,inputLName;
+			var temp, temps;
+
+				// get data of address
+				place = localStorage.getItem("place");
+				places = place.toUpperCase();
+				document.getElementById("places").value = places;
+
+				// get data for date
+				dateIn = localStorage.getItem("dateIn");
+				document.getElementById("noDays").value = dateIn;
+				dateOut = localStorage.getItem("dateOut");
+				document.getElementById("noDay").value = dateOut;
+
+				// get data for time
+				timeIn = localStorage.getItem("timeIn");
+				document.getElementById("timein").value = timeIn;
+				timeOut = localStorage.getItem("timeOut");
+				document.getElementById("timeout").value = timeOut;
+
+				// get data for first name and last name
+				inputFName = localStorage.getItem("inputFName")
+				temp = inputFName.toUpperCase();
+				inputLName = localStorage.getItem("inputLName")
+				temps = inputLName.toUpperCase();
+				document.getElementById("names").innerHTML = temp + " " + temps;
+				
+				// get day for how many days
+				days = localStorage.getItem("days");
+				document.getElementById("durDate").value = days + " Days/s";
+
+				// get data for the total time
+				total_time = localStorage.getItem("total_time");
+				document.getElementById("durTime").value = total_time + " Hour/s";
+
+				// display the rate per hour
+				document.getElementById("parRate").value = "100 per hour";
+
+				// compute the total ammopunt
+				amount = localStorage.getItem("amount");
+				document.getElementById("totalAmount").value = amount;
+			}
+		</script>
+
+		<script src="js/js.js"></script>
+		<script src="js/jquery.js"></script>
+
+	</body>
+	<!-- END OF BODY -->
+</html>

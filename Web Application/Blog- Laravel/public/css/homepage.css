@@ -1,0 +1,50 @@
+html { 
+    background: url(../image/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container*/
+
+.container{
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.507);
+    width: 480px;
+    height: 460px;
+    padding: 20px;
+    margin-left: 770px;
+}
+
+input{
+    padding: 10px 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+p{
+    font-size: 20px;
+}
+
+/*End Main Container*/

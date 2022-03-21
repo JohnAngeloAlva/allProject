@@ -1,0 +1,25 @@
+/*START OF CONTENT*/
+body{
+    background-color: rgba(187, 183, 183, 0.253);
+}
+
+.modal-header{
+    background-color: rgb(60, 60, 212);
+    color: rgb(241, 239, 239);
+}
+
+.seal{
+    width:180px;
+    height:200px;
+}
+
+.concert{
+    width:500px;
+    height:500px;
+}
+
+/*START OF HEADER*/
+.navbar-brand{
+    color:rgba(0, 0, 0, 0.986); 
+    background-color: rgba(187, 183, 183, 0.253);
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+html { 
+    background: url(../image/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+body{
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Style for Navigation*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.425);
+  }
+li{
+    float: right;
+    margin-top: 20px;
+  }
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover{
+    background-color: chocolate;
+  }
+li .active{
+    background-color: rgba(231,146,21,255);
+  }
+/* End Style for Navigation*/
+
+/* Style for Receipt Container*/
+.receipt{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    z-index: -1;
+  }
+.receipt h2{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+    margin-bottom: 20px;
+  }
+.receipt form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+label{
+    margin-left: 60px;
+  }
+.receiptValue{
+    margin-left: 60px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+input[type=submit]{
+    background-color: rgba(231,146,21,255);
+    border: none;
+    color: white;
+    width: 300px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top: 8px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+/* End Style for Receipt Container*/
+
+/* Style for Warning*/
+.alert {
+    padding: 50px;
+    background-color: #5a5ba8;
+    color: white;
+    z-index: 1;
+    margin-top: 15%;
+    font-size: 30px;
+  
+  }
+.closebtn {
+    
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 3px solid white;
+    padding: 5px;
+  }
+.closebtn:hover {
+    color: black;
+  }
+/* End Style for Warning*/
+
+/* Style for Footer*/
+.icon{
+    height: 50px;
+    width: 50;
+    border-radius: 10px;
+  }
+.iconPosition{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+.iconName{
+    position: absolute;
+    top:  20px;
+    left: 80px;
+    font-weight: bolder;
+    color: rgba(231,146,21,255);
+    font-size: 35px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+/* End Style for Footer*/
+
+ 
+ 
+ 
+  
+  

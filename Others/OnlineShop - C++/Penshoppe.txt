@@ -1,0 +1,9 @@
+Seller Name: Penshoppe Product Code: (PS1)  Product Name: Short Product Color: white Product Size: Free-size Product Details: Denim Product Prize: 399.50
+
+Seller Name: Penshoppe Product Code: (PS2)  Product Name: T-shirt Product Color: Yellow Product Size: Free-size Product Details: Cotton Product Prize: 199
+
+Seller Name: Penshoppe Product Code: (PS3)  Product Name: sleeveless Product Color: cyan Product Size: Free-size Product Details: wool Product Prize: 259
+
+Seller Name: Penshoppe Product Code: (PS4)  Product Name: Hanging Blouse Product Color: Mustard Product Size: Free-size Product Details: flax Product Prize: 295
+
+Seller Name: Penshoppe Product Code: (PS5)  Product Name: Jacket Product Color: balck Product Size: Free-size Product Details: leather Product Prize: 699.75

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignChooseUser"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Signup "
+            android:textAllCaps="true"
+            android:textColor="@color/yellow_500"
+            android:textSize="60sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="as"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+        android:src="@drawable/pick_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup to continue"
+        android:textSize="25sp"
+        android:layout_marginRight="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ImageView
+        android:layout_width="318dp"
+        android:layout_height="287dp"
+        android:layout_gravity="center"
+        android:src="@drawable/head_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slogan_name" />
+
+    <Button
+        android:id="@+id/btnCommuter"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/montserratbold"
+        android:text="Commuter"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/choose_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slogan_name" />
+
+    <Button
+        android:id="@+id/btnDriver"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/montserratbold"
+        android:text="Driver"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/choose_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCommuter" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

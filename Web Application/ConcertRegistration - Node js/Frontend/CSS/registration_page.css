@@ -1,0 +1,12 @@
+/*START OF CONTENT*/
+body{
+    background-color: rgba(187, 183, 183, 0.253);
+}
+.navbar-brand{
+    color:rgba(0, 0, 0, 0.986); background-color: rgba(187, 183, 183, 0.253);
+}
+img{
+    width:400px; 
+    height: 400px;
+}
+/*END OF CONTENT*/

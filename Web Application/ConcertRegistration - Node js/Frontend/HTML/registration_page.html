@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="icon" href="../PICTURES/Ph_seal_quezon_lucena.png" type="image/icon type">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/registration_page.css">
+
+    <title>Registration Page</title>
+</head>
+
+<body>
+
+    <!--START OF HEADER-->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" >Registration Management</a>
+            </div>
+        </div>
+    </nav>
+    <!--END OF HEADER-->
+
+    <!--START OF CONTAINER-->
+    <div class="row">
+        <div class="container">
+            
+            <!--START OF CONTENT-->
+            <div class="col-md-8">
+                
+                <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Registration Number</th>
+                                <th>Name</th>
+                                <th>Seat Designation</th>
+                                <th>Phone Number</th>
+                                <th>Number of People</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody id="databody">
+                            
+                        </tbody>
+                </table>
+                <a href="register_page.html"><btn class="btn btn-info btn-lg">REGISTER</btn></a>
+            </div>
+
+            <div class="col-md-4">
+                <img src="../PICTURES/bamboo.jpg" alt="Lucena City seal">
+            </div>
+            
+        </div>
+        <!--END OF CONTENT-->
+
+    </div>
+    <!--END OF CONTAINER-->
+
+
+    <script>
+
+    //START OF REGISTRATION SCRIPT
+        $(document).ready(function(){
+            fetchList();
+        });
+
+        //FETCHING THE DATA FUNCTION
+        function fetchList(){
+            let url = ' http://localhost:8080/event/registration ';
+
+            //GET THE DATA
+            $.ajax({
+                url: url,
+                success: function(data, status){
+                    populateData(data.registration);
+                },
+                dataType: 'json'
+            });
+        }
+        //END OF REGISTRATION SCRIPT
+
+        //POPULATE THE DATA FUNCTION
+        function populateData(data){
+            
+            let tablebody = document.getElementById('databody');
+
+            //LOOP THE DATA
+            data.forEach(function(registration){
+
+                let tr = document.createElement('tr');
+               
+                //PRINTING THE RETRIEVED DATA
+                tr.innerHTML =  '<td>' + registration.Registration_Num + '</td>' +
+                                '<td>' + registration.Name + '</td>' +
+                                '<td>' + registration.Seat_Destination + '</td>'+
+                                '<td>' + registration.Phone_Num + '</td>' +
+                                '<td>' + registration.Num_of_People + '</td>' +
+                                '<td>' + registration.Gmail + '</td>' ;
+
+                 tablebody.appendChild(tr);
+            });
+        }
+        //END POPULATE THE DATA FUNCTION
+
+    //END OF REGISTRATION SCRIPT
+    </script>
+
+</body>
+</html>

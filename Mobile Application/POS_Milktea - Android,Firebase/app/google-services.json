@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "156033106698",
+    "project_id": "posfinals",
+    "storage_bucket": "posfinals.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156033106698:android:a167b3cfb12067fc01f0f3",
+        "android_client_info": {
+          "package_name": "ph.edu.pos_finals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156033106698-qbb73enva95thgceaelmuiibiu4c30sq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ph.edu.pos_finals",
+            "certificate_hash": "9044f5a02060857eda78e9cc9c1b0918d73e7c37"
+          }
+        },
+        {
+          "client_id": "156033106698-ouphtvpl8q5ibb8scjvtfsgibra7jfk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdMb9rVxNxc2YBTi_pKhrHaj4uIXswQ_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156033106698-ouphtvpl8q5ibb8scjvtfsgibra7jfk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

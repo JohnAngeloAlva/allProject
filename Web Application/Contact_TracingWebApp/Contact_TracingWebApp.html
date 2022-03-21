@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Contact Tracing</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <body>
+        <header>
+            <div class="container">
+                <a href="#" class="logo"><span>H</span>ealth<span>C</span>are.</a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="Contact_TracingWebApp.html">Home</a></li>
+                        <li><a href="details.html">Details</a></li>
+                        <li><a href="covid-19 update">Covid-19 Update</a></li>
+                        <li><a href="facility">Hospital Facility</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <li><a href="about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            <div class="wrapper">
+                <div class="title">
+                  Information Form
+                </div>
+                <div class="form">
+                   <div class="inputfield">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" class="input" placeholder="Enter Your Full Name" required>
+                   </div>  
+                    <div class="inputfield">
+                      <label for="age">Age</label>
+                      <input type="text" id="age" name="age" class="input" placeholder="Enter Your Age" required>
+                   </div>  
+                   <div class="inputfield">
+                      <label for="location">Location</label>
+                      <input type="text" id="location" name="location" class="input" placeholder="Enter Your Location" required>
+                   </div>  
+                  <div class="inputfield">
+                      <label for="symptoms">Symptoms</label>
+                      <input type="text" id="symptoms" name="symptoms" class="input" placeholder="e.g. Covid-19" required>
+                   </div> 
+                   <div class="inputfield">
+                    <label for="contactnumber">Contact Number</label>
+                    <input type="text" id="contactnumber" name="contactnumber" class="input" placeholder="Enter Your Contact Number" required>
+                 </div> 
+                  <div class="inputfield">
+                    <button type="button" class="btn" onClick="submitForm()">CONFIRM</button>
+                  </div>
+                </div>
+            </div>	
+
+
+  <script>
+    function submitForm(){
+            let url = 'http://localhost:8080/api/covidtracing';
+            let dataSubmit = JSON.stringify({
+                "Name": $("#name").val(), 
+                "Age": $("#age").val(), 
+                "Location": $("#location").val(), 
+                "Symptoms": $("#symptoms").val(), 
+                "ContactNumber": $("#contactnumber").val(), 
+          
+            });
+            $.ajax({
+
+                type: "POST",
+                url: url,
+                data: dataSubmit,
+                contentType: 'application/json',
+
+                success: function(data, status){
+                    alert(data.message);
+                    location.replace("details.html");
+                },
+
+                dataType: "json"
+
+            });
+
+        }
+  </script>
+          </body>
+    </head>
+</html>
+ 
+   
+

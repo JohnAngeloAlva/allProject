@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="../ParkingBuddyPh/Images/PBPh-Logo.png" rel="icon">
+	<link href="../ParkingBuddyPh/Images/PBPh-Logo.png" rel="apple-touch-icon"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../ParkingBuddyPh/Bootstrap/bootstrap.min.css" >
+	<link rel="stylesheet" href="../ParkingBuddyPh/icofont/icofont.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <link rel ="stylesheet" href="../ParkingBuddyPh/CSS/Reservation.css">
+    <title>Reservations | ParkingBuddy.ph</title>
+
+</head>
+<body>
+    <header id="header" class="fixed-top ">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-9 d-flex align-items-center">
+                    <h1 class="logo mr-auto"><a href="Home Page.html">ParkingBuddy.ph</a></h1>
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li><a href="Home Page.html">Home</a></li>
+                            <li><a href="Login Page.html">Login</a></li>
+                            <li><a href="Register Page.html">Register</a></li>
+                            <li  class="active"><a href="testing.html">Reservations</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="top" class="d-flex align-items-center">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-xl-7 col-lg-7 pt-3 pt-lg-0 order-2 order-lg-1 top-img">
+					<img src="../ParkingBuddyPh/Images/image1.png" class="img-fluid animated" alt=".."> 
+				</div>
+				<div class="col-xl-5 col-lg-5 order-1 order-lg-2 d-flex flex-column justify-content-center ">
+                    <div class="content">
+                        <h2>Reservation Details</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h5>In Date </h5>
+                                    <input type="date" id="reservedIn" class="Date" name="reservedIn" onchange="Results()" required>
+                                </td>
+                                <td>
+                                    <h5>Out Date</h5>
+                                    <input type="date" id="reservedOut" class="Date" name="reservedOut" onchange="Results()" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Select a time in:</label>
+                                    <input type="time" class="Time" id="timeIn" name="timeIn" >
+                                </td>
+                                <td>
+                                    <label>Select a time out:</label>
+                                    <input type="time" class="Time" id="timeOut" name="timeOut" >
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <h2>Personal Details</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input class="FName" type="text" name="FirstName" id="inputFName" placeholder="First Name"></input>
+                                </td>
+                                <td>
+                                    <input class="LName" type="text" name="LastName" id="inputLName" placeholder="Last Name"></input>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="text" class="Address" placeholder="Address"><br>
+                        <label>Select Place in Quezon Province:</label>
+                        <select class="Place" name="place" id="place">
+                            <option value="Lucena City">Lucena City</option>
+                            <option value="Lucban City">Lucban City</option>
+                            <option value="Taybas City">Tayabas City</option>
+                        </select>
+
+                        <h2>Contact Details</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" class="Email" placeholder="Email">
+                                </td>
+                                <td>
+                                    <input type="text" class="Number" placeholder="Contact Number">
+                                </td>
+                            </tr>
+                        </table>
+                    
+                        <h2>Additional Details</h2>
+                        <textarea name="info" rows="5" cols="70" placeholder="ADDITIONAL INFO HERE"></textarea>
+
+                        <div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Reservation" onclick="Results()">Make Reservations</button>
+                        </div> 
+                    </div>
+                    <div class="modal" id="Reservation">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Confirmation of Reservations</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                            
+                                <div class="modal-body">
+                                    <table class="Computed">
+                                        <tr>
+                                            <td>Reservation Place: </td>
+                                            <td><input class="Result" id="places" disabled></input></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name: </td>
+                                            <td><p class="Name" id="names"></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>In Date:</td>
+                                            <td><input class="ResultIn" id="noDays" disabled></input></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Out Date:</td>
+                                            <td><input class="ResultOut" id="noDay" disabled></input></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time In:</td>
+                                            <td><input class="ResultIn" id="timein" disabled></input></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time Out:</td>
+                                            <td><input class="ResultOut" id="timeout" disabled></input></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="Line"></td>
+                                            <td class="Line"></td>
+                                        </tr>
+                                    </table>
+                                    <table class="Total">
+                                        <tr>
+                                            <td>Parking Rate: </td>
+                                            <td><input class="ResultTotal" id="parRate" disabled></input></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Duration Date:</td>
+                                            <td><input class="ResultTotal" id="durDate" disabled></input></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Duration Time:</td>
+                                            <td><input class="ResultTotal" id="durTime" disabled></input></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="Line"></td>
+                                            <td class="Line"></td>
+                                        </tr>
+                                    </table>
+                                    <table class="Total">
+                                        <tr>
+                                            <td>Total Amount: </td>
+                                            <td><input class="ResultTotal" id="totalAmount" disabled></input></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Continue To Payment</button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+			</div>
+		</div>
+    </section>
+      
+    
+    <script>
+        var dateIn,dateOut,currDate,place,timeIn,timeOut,days,totalTime,totalAmount,amount;
+
+        function Results(){
+            dateIn = new Date(document.getElementById("reservedIn").value);
+            dateOut =new Date(document.getElementById("reservedOut").value);
+            currDate = new Date();
+
+            if (dateIn< currDate.setHours(0, 0, 0, 0)){
+                alert("ERROR!! Past Date");
+                document.getElementById("reservedIn").value =" ";
+                document.getElementById("reservedOut").value =" ";
+            }
+            if (dateOut < dateIn){
+                alert("ERROR!! Out Date");
+                document.getElementById("reservedIn").value =" ";
+                document.getElementById("reservedOut").value =" ";
+            } 
+            place = document.getElementById("place").value;
+            document.getElementById("places").value = place;
+
+            document.getElementById("noDays").value = dateIn ;
+            document.getElementById("noDay").value = dateOut ;
+
+            timeIn =  document.getElementById("timeIn").value;
+            timeOut = document.getElementById("timeOut").value;
+            
+            document.getElementById("timein").value = timeIn ;
+            document.getElementById("timeout").value = timeOut;
+
+            document.getElementById("names").innerHTML = document.getElementById('inputFName').value + " " + document.getElementById('inputLName').value;
+
+            document.getElementById("parRate").value = "100 per hour";
+
+            days = (dateOut- dateIn) / (24 * 3600 * 1000);
+            document.getElementById("durDate").value = days + " Day/s";
+
+            if(timeIn < timeOut){
+                total_time = parseInt(timeOut) - parseInt(timeIn);
+            }
+            else{
+                total_time = parseInt(timeIn) - parseInt(timeOut);
+            }
+            document.getElementById("durTime").value = total_time + " Hour/s";
+
+            if(days>=1){
+                totalAmount = (total_time * days) * 100;
+                amount = totalAmount.toLocaleString('en-US', {minimumFractionDigits: 2});
+                document.getElementById("totalAmount").value = amount;
+            }
+            else if(days<=0){
+                totalAmount = total_time * 100;
+                amount = totalAmount.toLocaleString('en-US', {minimumFractionDigits: 2});
+                document.getElementById("totalAmount").value = amount;
+            }
+        }
+    </script>
+
+</body>
+</html>

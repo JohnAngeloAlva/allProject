@@ -1,0 +1,9 @@
+Seller Name: Levis Product Code: (LVS1)  Product Name: T-shirt Product Color: red Product Size: Free-size Product Details: cotton Product Prize: 290
+
+Seller Name: Levis Product Code: (LVS2)  Product Name: Skirt Product Color: white Product Size: Free-size Product Details: leather Product Prize: 199
+
+Seller Name: Levis Product Code: (LVS3)  Product Name: Dress ShirtProduct Color: Army  Green Product Size: Free-size Product Details: silk Product Prize: 360
+
+Seller Name: Levis Product Code: (LVS4)  Product Name: Sweater Product Color: blue Product Size: Free-size Product Details: Fur Product Prize: 700
+
+Seller Name: Levis Product Code: (LVS5)  Product Name: Jacket Product Color: purple Product Size: Free-size Product Details: leather Product Prize: 899

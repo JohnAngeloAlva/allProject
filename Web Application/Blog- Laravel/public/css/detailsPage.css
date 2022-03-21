@@ -1,0 +1,38 @@
+body{
+    margin: 50px;
+}
+html { 
+    background: url(../image/backgroundDetails.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ 
+/*Table of Foods*/
+
+table, td {
+    border: 5px solid white;
+    border-collapse: collapse;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+  }
+
+th{
+    padding: 20px;
+    border: 5px solid white;
+    border-collapse: collapse;
+    font-size: 30px;
+    color: white;
+}
+caption {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+img{
+    box-shadow: 0 0 8px 8px white inset
+}
+
+/*End Table of Foods*/

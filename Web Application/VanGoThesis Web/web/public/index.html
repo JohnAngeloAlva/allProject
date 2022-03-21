@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="css/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="css/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page" >
+    <div class="login-box">
+        <div class="login-logo">
+          <a href="../../index2.html"><b>Van</b>Go</a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+          <div class="card-body login-card-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+      
+            
+              <div class="input-group mb-3">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required="true">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="true">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8">
+                  <div class="icheck-primary">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">
+                      Remember Me
+                    </label>
+                  </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <button type="submit" id="login" class="btn btn-primary btn-block">Sign In</button>
+                </div>
+                <!-- /.col -->
+              </div>
+           
+      
+            
+            <!-- /.social-auth-links -->
+      
+            
+          </div>
+          <!-- /.login-card-body -->
+        </div>
+      </div>
+</body>
+</script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="js/dashboard.js"></script>
+<script type="module">
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+  import { getDatabase, ref, child, onValue, get, set } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+  
+  const firebaseConfig = {
+      apiKey: "AIzaSyADIizDujSp7DQu8Znbwu-KK2P67ClK5Ow",
+      authDomain: "vango-9cacc.firebaseapp.com",
+      databaseURL: "https://vango-9cacc-default-rtdb.firebaseio.com",
+      projectId: "vango-9cacc",
+      storageBucket: "vango-9cacc.appspot.com",
+      messagingSenderId: "595098715715",
+      appId: "1:595098715715:web:483026257a0c936808f6f6",
+      measurementId: "G-VK3B73DCR3"
+  };
+
+  
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getDatabase();
+  const auth = getAuth();
+
+  login.addEventListener('click', (e) => {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const dt = new Date()
+        const user = userCredential.user;
+        set(ref(db, 'admin/' + user.uid), {
+          last_login: dt
+        })
+        alert("User log in");
+        window.location.href = "commuter.html";
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+      });
+  });
+
+
+</script>
+</html>

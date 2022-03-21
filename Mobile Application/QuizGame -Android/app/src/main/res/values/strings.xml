@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Html Quiz</string>
+
+    <string-array name="year_array">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+    </string-array>
+
+</resources>

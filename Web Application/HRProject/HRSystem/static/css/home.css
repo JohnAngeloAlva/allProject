@@ -1,0 +1,176 @@
+
+/* Style for Hompage name sliding */
+.content-slider {
+    width: 100%;
+    height: 360px;
+  }
+  
+  .slider {
+    height: 320px;
+    width: 680px;
+    margin: 40px auto 0;
+    overflow: visible;
+    position: relative;
+  }
+  
+  .mask {
+    overflow: hidden;
+    height: 320px;
+  }
+  
+  .slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .slider li {
+    width: 680px;
+    height: 320px;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+  }
+  
+  .slider .quote {
+    font-size: 40px;
+    font-style: italic;
+  }
+  
+  
+  /*Sliding animation secondss */
+  .slider li.anim1 {
+    animation: cycle 5s linear infinite;
+  }
+  
+  .slider li.anim2 {
+    animation: cycle2 5s linear infinite;
+  }
+  
+  .slider li.anim3 {
+    animation: cycle3 5s linear infinite;
+  }
+  .slider:hover li {
+    animation-play-state: paused;
+  }
+
+  /* Style for Hompage name sliding animation */
+  @keyframes cycle {
+    0% {
+      top: 0px;
+    }
+    4% {
+      top: 0px;
+    }
+    16% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    20% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    21% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    50% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    92% {
+      top: -325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    96% {
+      top: -325px;
+      opacity: 0;
+    }
+    100% {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cycle2 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+    16% {
+      top: -325px;
+      opacity: 0;
+    }
+    20% {
+      top: 0px;
+      opacity: 1;
+    }
+    24% {
+      top: 0px;
+      opacity: 1;
+    }
+    36% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    40% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    41% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  
+  @keyframes cycle3 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+    36% {
+      top: -325px;
+      opacity: 0;
+    }
+    40% {
+      top: 0px;
+      opacity: 1;
+    }
+    44% {
+      top: 0px;
+      opacity: 1;
+    }
+    56% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+    60% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+    61% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }

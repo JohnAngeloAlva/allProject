@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserratbold"
+                android:text="Edit Info"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <!-- Destination -->
+
+            <!-- Driver Name-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Full Name"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Time -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Age"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="number"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Fare -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Address"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Capacity -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Phone Number"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/buttons"
+                    />
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/buttons"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

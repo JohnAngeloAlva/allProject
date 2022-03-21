@@ -1,0 +1,59 @@
+/*START OF carousel picture*/
+.carousel slide{
+    position: relative;
+}
+
+.absolute_content{
+    position: absolute;
+    top: 5cm;
+    color: aliceblue;
+    margin-left: 5cm;
+}
+.content_title{
+    font-size: 8mm;
+    font-weight: 900;
+}
+
+.carousel-inner img{
+    margin-top: 14mm;
+    width: 100%;
+    height: 100%;
+}
+/*End OF carousel picture*/
+
+/*START OF Content*/
+nav{
+    background-color: #5a646b; width: 100%;
+}
+
+.text_comment{
+    width:60%;
+    margin-top: 2mm;
+}
+
+.modal-header{
+    background-color: rgb(42, 117, 230);
+}
+/*End OF Content*/
+
+/*START OF Footer*/
+.footer{
+      padding:20px;
+      color:white;
+      background-color:#666;
+    column-count: 3;
+}
+
+.credit img{
+    width:30px;
+}
+
+.form{
+      margin-left:20px;
+}
+
+.seat{
+    padding: 5px;
+    padding-right: 50px;
+}
+/*End OF Footer */

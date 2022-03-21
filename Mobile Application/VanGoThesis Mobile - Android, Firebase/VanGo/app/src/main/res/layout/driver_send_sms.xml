@@ -1,0 +1,130 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="20dp"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/circle2"
+        app:tint="@color/yellow_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="20dp"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/ic_notifications_black_24dp"
+        app:tint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="380dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/dialog_bg"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Notify all Commuters?"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="#454545"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="280dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button"
+            android:elevation="1dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+        <Button
+            android:id="@+id/btnNotify"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserratbold"
+            android:text="Confirm"
+
+            android:textColor="@color/white"
+            app:backgroundTint="@color/dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="X"
+        android:textColor="#BF5552"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

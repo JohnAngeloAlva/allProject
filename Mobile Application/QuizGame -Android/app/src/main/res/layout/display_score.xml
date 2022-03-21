@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="357dp"
+        android:layout_height="539dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="160dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Name :"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:text="Year Level :"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textViewResultName"
+            android:layout_width="305dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewResultYear"
+            android:layout_width="305dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="165dp"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewResponse1"
+            android:layout_width="307dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="210dp"
+            android:text="Response :"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textViewResponse2"
+            android:layout_width="307dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="260dp"
+            android:text="Q1. What does HTML stand for?"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textViewResponse3"
+            android:layout_width="307dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="300dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorHighlight="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textViewResponse4"
+            android:layout_width="307dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="345dp"
+            android:text="Q2. Select the proper font tag?"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textViewResponse5"
+            android:layout_width="307dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="385dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textViewResponse6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="430dp"
+            android:text="Q3. How can you make numbered list?"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textViewResponse7"
+            android:layout_width="307dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="470dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

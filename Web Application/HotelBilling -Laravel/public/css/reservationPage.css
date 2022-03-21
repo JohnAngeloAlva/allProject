@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: black;
+  }
+html { 
+    background: url(../image/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+body{
+    margin: 0;
+    padding: 0;
+  }
+
+/* Style for Navigation*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.425);
+  }
+li{
+    float: right;
+    margin-top: 20px;
+  }
+  
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover{
+    background-color: chocolate;
+  }
+  li .active{
+    background-color: rgba(231,146,21,255);
+  }
+.icon{
+  height: 50px;
+  width: 50;
+  border-radius: 10px;
+}
+.iconPosition{
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+.iconName{
+  position: absolute;
+  top:  20px;
+  left: 80px;
+  font-weight: bolder;
+  color: rgba(231,146,21,255);
+  font-size: 35px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    margin-top: 10px;
+}
+/* End Style for Navigation*/
+
+/* Style for Reservation Container*/
+.reservationContainer{
+    background-color: rgba(209, 198, 42, 0.39);
+    width: 1040px;
+    height: 500px;
+    padding: 20px;
+    margin-top: 35px;
+    margin-left: 130px;
+    position: relative;
+  }
+.leftContainer{
+    background-color: rgba(255, 255, 255, 0.507);
+    width: 500px;
+    height: 460px;
+    padding: 10px;
+    position: absolute;
+  }
+.date{
+      padding: 3px;
+      font-size: 20px;
+      width: 220px;
+  }
+.rooms{
+    padding: 2px;
+    font-size: 20px;
+    margin-top: 6px;
+  }
+.personalDetails{
+    padding: 2px;
+    font-size: 20px;
+    margin-top: 3px;
+    width: 220px;
+  }
+.personalDetailsAddress{
+    padding: 2px;
+    font-size: 20px;
+    margin-top: 3px;
+    width: 460px;
+  }
+.contactDetails{
+    padding: 2px;
+    font-size: 20px;
+    margin-top: 3px;
+    width: 220px;
+ }
+input[type=submit]{
+    background-color: rgba(231,146,21,255);
+    border: none;
+    color: white;
+    width: 300px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top: 8px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 80px;
+    cursor: pointer;
+  }
+.rightContainer{
+    background-color: rgba(255, 255, 255, 0.507);
+    display: inline-block;
+    width: 500px;
+    height: 460px;
+    padding: 10px;
+    position: absolute;
+    left: 520px;
+  }
+.image {
+    margin-top: 60px;
+    width: 100%;
+    border-radius: 8px;
+  }
+/* End Style for Reservation Container*/
+
+
+/* Style for Footer Container*/
+.footer{
+  background-color: rgba(0, 0, 0, 0.425);
+  padding: 70px;
+}
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+  color: white;
+}
+.column2 p {
+  color: white;
+  margin-top: 20px;
+}
+.column2 h2{
+  color: white;
+}
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+  margin-top: -20px;
+}
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 10px;
+  margin-top: -160px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo{
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+}
+iframe{
+  margin-top: 10px;
+  border-radius: 20px;
+}
+/* End Style for Footer Container*/
+
+/* Style for Warning*/
+.alert {
+  padding: 30px;
+  background-color: rgba(255, 0, 0, 0.897);
+  color: white;
+  position: absolute;
+  top: 200px;
+  font-size: 20px;
+  z-index: 1;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-top: 35px;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
+/* End Style for Warning*/
+

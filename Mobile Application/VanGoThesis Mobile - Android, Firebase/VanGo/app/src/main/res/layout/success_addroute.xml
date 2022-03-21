@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-50dp"
+        android:elevation="20dp"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:tint="@color/yellow_500" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="20dp"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/ic_baseline_check_24"
+        app:tint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/dialog_bg"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Success "
+            android:textSize="23dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:textAllCaps="true"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="15dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Terminal"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/text"
+                        android:text="Terminal: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratregular"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/terminal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Destination"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Destination: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/destination"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textDriverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Driver Name"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Driver Name: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/driverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textArrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Arrival Time"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Arrival Time: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/arrivalTime"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFareRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Fare"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Fare Rate: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/fareRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textCapacityVan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Capacity of Van"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Van Capacity: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/capacityVan"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textVanmodel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Van Model"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Van Model: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/vanModel"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textPlateNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Plate Number"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Plate Number: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/plateNumber"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserratregular"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Account"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconTint="@color/black"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Account: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/account"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/montserratbold"
+                        android:textColor="@color/black"
+                        android:inputType="text"/>
+
+
+                </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="260dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="525dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/montserratbold"
+        android:text="Done"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
